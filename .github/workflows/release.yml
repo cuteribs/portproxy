@@ -18,10 +18,6 @@ jobs:
       with:
         go-version: 1.19
 
-    hooks:
-      post:
-       - upx "{{ .Path }}"
-
     - name: Run GoReleaser
       uses: goreleaser/goreleaser-action@master
       with:
