@@ -12,6 +12,14 @@ builds:
       - amd64
       - arm64
 
+    targets:
+     - "darwin_arm64"
+     - "darwin_amd64"
+     - "linux_arm64"
+     - "linux_amd64"
+#    - "windows_arm64"  upx does not support windows_arm64 yet
+     - "windows_amd64"
+
     ldflags:
       - -s -w
       
